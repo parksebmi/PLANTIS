@@ -1,0 +1,264 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+.header {
+  width: 100%; height: 60px;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1;
+}
+.header .logo {
+  width: 133px; height: 46px;
+  float: left;
+  margin-left: 10px; margin-top: 7px;
+}
+.header .logo img {
+  width: 100%;
+}
+.header .gnb {
+  float: right;
+}
+.header .gnb div {
+  margin-top: 20px; margin-right: 10px;
+  float: left;
+}
+
+.visual_main {
+  width: 100%; height: auto;
+  overflow: hidden;
+}
+.visual_main img {
+  width: 100%; height: auto;
+}
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #56a46f;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.delivery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+.delivery .del {
+  width: 47%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.delivery .del .delimg {
+  width: 100%; height: auto;
+}
+.delivery .del .delimg img {
+  width: 100%; height: auto;
+}
+.delivery .del .title01 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  color: #b9b9b9;
+  margin-top: 5px;
+}
+.delivery .del .title02 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  color: #606060;
+  margin-top: 3px;
+}
+.delivery .del .price {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #606060;
+  margin-top: 3px;
+}
+.delivery .del .price div {
+  float: left;
+}
+.delivery .del .price .title03 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #56a46f;
+  margin-right: 5px;
+}
+.delivery .del .price .title04 {
+  width: 46px; height: 14px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.delivery .del .price .title04 img {
+  width: 100%; height: auto;
+}
+
+#best01,#best02,#best03,#best04,#best05,#best06{display: none;}
+
+#best01:checked ~ .all01 {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+#best02:checked ~ .all02 {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+#best03:checked ~ .all03 {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+#best04:checked ~ .all04 {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+#best05:checked ~ .all05 {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+#best06:checked ~ .all06 {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.bestkey_wrap {
+  width: 100%; 
+  margin: 0 10px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+.bestkey_wrap .bestkey {
+  width: 130%;
+}
+.bestkey_wrap .bestkey label {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #c1c1c1;
+  margin-right: 15px;
+}
+
+.best_wrap {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+  display: none;
+}
+.best_wrap .best {
+  margin-right: 10px;
+}
+.best_wrap .best .bestimg {
+  width: 200px; height: 200px;
+}
+.best_wrap .best .bestimg img {
+  width: 200px; height: 200px;
+}
+.best_wrap .best .title01 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  color: #b9b9b9;
+  margin-top: 5px;
+}
+.best_wrap .best .title02 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  color: #606060;
+  margin-top: 3px;
+}
+.best_wrap .best .price {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #606060;
+  margin-top: 3px;
+}
+.best_wrap .best .price div {
+  float: left;
+}
+.best_wrap .best .price .title03 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #56a46f;
+  margin-right: 5px;
+}
+.best_wrap .best .price .title04 {
+  float: right;
+  margin-right: 5px;
+}
+
+.new_visual {
+  width: 100%; height: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.new_visual img {
+  width: 100%; height: auto;
+}
+
+.new_wrap {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  overflow-x: auto;
+}
+.new_wrap .new {
+  margin-right: 10px;
+}
+.new_wrap .new .newimg {
+  width: 200px; height: 200px;
+}
+.new_wrap .new .newimg img {
+  width: 200px; height: 200px;
+}
+.new_wrap .new .title01 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  color: #b9b9b9;
+  margin-top: 5px;
+}
+.new_wrap .new .title02 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
+  color: #606060;
+  margin-top: 3px;
+}
+.new_wrap .new .price {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #606060;
+  margin-top: 3px;
+}
+.new_wrap .new .price div {
+  float: left;
+}
+.new_wrap .new .price .title03 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #56a46f;
+  margin-right: 5px;
+}
+.new_wrap .new .price .title04 {
+  float: right;
+  margin-right: 5px;
+}
+
